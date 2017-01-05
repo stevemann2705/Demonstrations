@@ -125,7 +125,7 @@ if __name__ == "__main__":
     print("Client A chose a random number: {0}\nClient B chose a random number: {1}\n".format(ClientA.private_key,
                                                                                               ClientB.private_key))
 
-    # The clients both calculate their private keys (g ** n % P)
+    # The clients both calculate their public keys (g ** n % P)
     ClientA.calculate_public_key()
     ClientB.calculate_public_key()
     print("Client A's public key is: {0}\nClient B's public key is: {1}\n".format(ClientA.public_key,
